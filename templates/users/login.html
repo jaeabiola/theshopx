@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+
+{% block content  %}
+<p>
+    <div>
+        <h1>login</h1>
+    </div>
+</p>
+<div class="signinform">
+    <form method="POST">
+        {% csrf_token %}
+        <div class="siginform">
+            <div class="username"  >
+                <label for="">username</label>
+                <input type="username" placeholder="enter email" name="username">
+            </div>
+            <div class="username">
+                <label for="">password</label>
+                <input type="password" name="password">
+            </div>
+            <div class="username">
+                <input type="submit" value="signin">
+            </div> 
+        </div>                                                                    
+    </form>    
+</div>
+
+
+
+
+{% endblock  %}
